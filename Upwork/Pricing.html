@@ -1,0 +1,2085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&"
+    />
+
+    <link rel="stylesheet" href="./upwork.css" />
+    <style>
+      .check {
+        font-size: 25px;
+      }
+      #prices {
+        position: sticky;
+        top: 105px;
+        overflow: hidden;
+        z-index: 2;
+      }
+    </style>
+  </head>
+
+  <body class="font-helv relative">
+    <header>
+      <nav
+        class="bg-white fixed top-0 w-[100%] z-10 py-1 border-gray-200 border"
+      >
+        <div
+          class="flex m-auto justify-between w-[80%] max-2xl:w-[90%] max-xl:w-[97%]"
+        >
+          <div
+            class="flex flex-wrap justify-between items-center lg:justify-start lg:gap-7 p-4 w-full lg:w-[80%]"
+          >
+            <a
+              href="./upwork.html"
+              class="flex items-center space-x-3 rtl:space-x-reverse"
+            >
+              <img
+                src="./multimedia/Upwork-logo.svg"
+                class="h-5"
+                alt="Upwork Logo"
+              />
+            </a>
+            <!-- edit here -->
+            <button
+              data-collapse-toggle="navbar-dropdown"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-dropdown"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+            <!-- edit here -->
+            <div class="hidden w-full lg:block lg:w-auto" id="navbar-dropdown">
+              <ul
+                class="flex flex-col font-medium p-4 lg:p-0 mt-4 border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white"
+              >
+                <!-- first -->
+                <li>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar1"
+                    class="flex pointer relative text-[16px] lg:text-[14px] items-center justify-between w-full py-3 px-3 text-blackhead rounded-sm focus:text-green-800 hover:text-hover lg:hover:bg-transparent lg:border-0 lg:hover:text-hover lg:p-0 lg:w-auto"
+                  >
+                    Find talent
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar1"
+                    class="z-10 hidden font-normal flex absolute border border-gray-300 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-full"
+                  >
+                    <div class="w-[85%] m-auto flex">
+                      <div
+                        class="leading-[2] max-lg:w-[100%] w-[30%] max-md:m-5 items-center flex-col m-10"
+                      >
+                        <div
+                          class="p-5 flex justify-between w-full hover:bg-[#f1f1f1]"
+                        >
+                          <div>
+                            <h3 class="text-[15px] max-md:text-[13px]">
+                              Post a job and hire a pro
+                            </h3>
+                            <p
+                              class="text-green-600 text-[14px] max-md:text-[12px]"
+                            >
+                              Talent Marketplace
+                            </p>
+                          </div>
+                          <div class="pt-5">
+                            <img
+                              class="h-5"
+                              src="./multimedia/icons8-arrow-30.png"
+                              alt="arrow"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="p-5 flex justify-between w-full hover:bg-[#f1f1f1]"
+                        >
+                          <div>
+                            <h3 class="text-[15px] max-md:text-[13px]">
+                              Browse and buy projects
+                            </h3>
+                            <p
+                              class="text-green-600 text-[14px] max-md:text[12px]"
+                            >
+                              Project Catalog
+                            </p>
+                          </div>
+                          <div class="pt-5">
+                            <img
+                              class="h-5"
+                              src="./multimedia/icons8-arrow-30.png"
+                              alt="arrow"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="p-5 flex justify-between w-full hover:bg-[#f1f1f1]"
+                        >
+                          <div>
+                            <h3 class="text-[15px] max-md:text-[13px]">
+                              Get advice from an industry expert
+                            </h3>
+                            <p
+                              class="text-green-600 text-[14px] max-md:text-[12px]"
+                            >
+                              Consultations
+                            </p>
+                          </div>
+                          <div class="pt-5">
+                            <img
+                              class="h-5"
+                              src="./multimedia/icons8-arrow-30.png"
+                              alt="arrow"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="border-[1px] max-lg:hidden m-5 border-gray-300"
+                      ></div>
+                      <div
+                        class="max-lg:hidden w-[70%] p-10 flex justify-between"
+                      >
+                        <div class="w-[30%] flex-col space-y-4">
+                          <h3 class="font-light relative">
+                            Talent Marketplace
+                            <span class="text-[5px] absolute">TM</span>
+                          </h3>
+                          <p class="text-[14px]">
+                            Learn about working with talent or explore your
+                            specific hiring needs.
+                          </p>
+                          <div class="flex gap-3">
+                            <a
+                              href="#"
+                              class="underline hover:no-underline text-hover text-[14px]"
+                              >Hire on Talent Marketplace
+                            </a>
+                            <div class="h-6 w-5 mb-0.5">
+                              <img
+                                class="h-full w-full"
+                                src="./multimedia/icons8-arrow-right-50.png"
+                                alt="arrow"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-[60%] mt-10">
+                          <div
+                            class="text-[14px] py-2 rounded-xl px-6 hover:bg-[#a5a5a5]"
+                          >
+                            Development & IT
+                          </div>
+                          <div
+                            class="text-[14px] py-2 rounded-xl px-6 hover:bg-[#a5a5a5]"
+                          >
+                            Design & Creative
+                          </div>
+                          <div
+                            class="text-[14px] py-2 rounded-xl px-6 hover:bg-[#a5a5a5]"
+                          >
+                            Sales & Marketing
+                          </div>
+                          <div
+                            class="text-[14px] py-2 rounded-xl px-6 hover:bg-[#a5a5a5]"
+                          >
+                            Writing & Translation
+                          </div>
+                          <div
+                            class="text-[14px] py-2 rounded-xl px-6 hover:bg-[#a5a5a5]"
+                          >
+                            Admin & Customer Support
+                          </div>
+                          <div
+                            class="text-[14px] py-2 rounded-xl px-6 hover:bg-[#a5a5a5]"
+                          >
+                            Finance & Accounting
+                          </div>
+                          <div
+                            class="text-[14px] py-2 rounded-xl px-6 hover:bg-[#a5a5a5]"
+                          >
+                            HR & Training
+                          </div>
+                          <div
+                            class="text-[14px] py-2 rounded-xl px-6 hover:bg-[#a5a5a5]"
+                          >
+                            Legal
+                          </div>
+                          <div
+                            class="text-[14px] py-2 rounded-xl px-6 hover:bg-[#a5a5a5]"
+                          >
+                            Engineering & Architecture
+                          </div>
+                          <div
+                            class="text-[14px] py-2 rounded-xl px-6 hover:bg-[#a5a5a5]"
+                          >
+                            Hire freelancers
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- second -->
+                <li>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar2"
+                    class="flex text-[16px] lg:text-[14px] items-center justify-between w-full py-3 px-3 text-blackhead rounded-sm focus:text-green-800 hover:text-hover lg:hover:bg-transparent lg:border-0 lg:hover:text-hover lg:p-0 lg:w-auto"
+                  >
+                    Find work
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar2"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-full"
+                  >
+                    <!-- second dropdown -->
+                    <div
+                      class="w-[80%] max-lg:flex-col flex mb-10 m-auto mt-10"
+                    >
+                      <div
+                        class="p-5 w-[23%] max-lg:w-[100%] mr-5 rounded-xl hover:bg-[#a5a5a5]"
+                      >
+                        <div
+                          class="py-4 w-[85%] max-sm:w-[95%] max-sm:px-2 max-sm:py-1 px-4 flex-col leading-[2]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-lg:text-[17px] max-sm:text-[14px]"
+                          >
+                            Ways to earn
+                          </h3>
+                          <p
+                            class="text-black font-light text-[14px] max-lg:text-[16px] max-sm:text-[13px]"
+                          >
+                            Learn why Upwork has the right opportunities for
+                            you.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="p-5 w-[23%] max-lg:w-[100%] mr-5 rounded-xl hover:bg-[#a5a5a5]"
+                      >
+                        <div
+                          class="py-4 w-[85%] max-sm:w-[95%] max-sm:px-2 max-sm:py-1 px-4 flex-col leading-[2]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-lg:text-[17px] max-sm:text-[14px]"
+                          >
+                            Find work for your skills
+                          </h3>
+                          <p
+                            class="text-black font-light text-[14px] max-md:text-[16px] max-sm:text-[13px]"
+                          >
+                            Explore the kind of work available in your field.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="p-3 w-[20%] max-lg:w-[100%] mr-5 max-lg:mr-1 rounded-xl hover:bg-[#a5a5a5]"
+                      >
+                        <div
+                          class="w-[90%] max-lg:[95%] max-lg:px-4 max-sm:w-[95%] max-sm:px-4 max-sm:py-1 p-4 flex-col leading-[2]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-lg:text-[17px] max-sm:text-[14px]"
+                          >
+                            Win work with ads
+                          </h3>
+                          <p
+                            class="text-black font-light text-[14px] max-lg:text-[16px] max-sm:text-[13px]"
+                          >
+                            Get noticed by the right client.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="p-5 w-[25%] max-lg:w-[100%] rounded-xl hover:bg-[#a5a5a5]"
+                      >
+                        <div
+                          class="py-4 w-[95%] max-sm:w-[95%] max-sm:px-2 max-sm:py-1 px-4 flex-col leading-[2]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-lg:text-[17px] max-sm:text-[14px]"
+                          >
+                            Join Freelancer Plus
+                          </h3>
+                          <p
+                            class="text-black font-light text-[14px] max-lg:text-[16px] max-sm:text-[13px]"
+                          >
+                            Access more Connects, get strategic insights on
+                            competitors, and try out the latest tools.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- <div class="py-1">
+                            <a
+                              href="#"
+                              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 "
+                              >Sign out</a
+                            >
+                          </div> -->
+                    </div>
+                  </div>
+                </li>
+                <!-- third -->
+                <li>
+                  <!-- edit here -->
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar3"
+                    class="flex text-[16px] lg:text-[14px] items-center justify-between w-full py-3 px-3 text-blackhead rounded-sm focus:text-green-800 hover:text-hover lg:hover:bg-transparent lg:border-0 lg:hover:text-hover lg:p-0 lg:w-auto"
+                  >
+                    Why Upwork
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar3"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-full"
+                  >
+                    <div
+                      class="w-[80%] flex max-lg:flex-col mb-10 m-auto mt-10"
+                    >
+                      <div
+                        class="p-5 max-lg:p-0 w-[20%] max-lg:w-[100%] flex-col"
+                      >
+                        <div
+                          class="py-5 w-[100%] px-6 max-lg:p-1 max-lg:mb-1 flex-col leading-[2] rounded-xl mb-5 hover:bg-[#a5a5a5]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-sm:text-[15px] max-lg:text-[17px]"
+                          >
+                            Success stories
+                          </h3>
+                          <p
+                            class="max-lg:hidden text-black font-light text-[14px] max-md:text-[12px]"
+                          >
+                            Discover how teams work strategically and grow
+                            together.
+                          </p>
+                        </div>
+                        <div
+                          class="py-4 w-[100%] max-lg:p-1 max-lg:mb-1 px-6 flex-col leading-[2] rounded-xl mb-5 hover:bg-[#a5a5a5]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-sm:text-[15px] max-lg:text-[17px]"
+                          >
+                            Reviews
+                          </h3>
+                          <p
+                            class="max-lg:hidden text-black font-light text-[14px] max-md:text-[12px]"
+                          >
+                            See what it’s like to collaborate on Upwork.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="p-5 w-[20%] max-lg:p-0 max-lg:w-[100%] flex-col"
+                      >
+                        <div
+                          class="py-5 w-[100%] max-lg:p-1 max-lg:mb-1 px-6 flex-col leading-[2] rounded-xl mb-5 hover:bg-[#a5a5a5]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-sm:text-[15px] max-lg:text-[17px]"
+                          >
+                            How to hire
+                          </h3>
+                          <p
+                            class="max-lg:hidden text-black font-light text-[14px] max-md:text-[12px]"
+                          >
+                            Learn about the different ways to get work done.
+                          </p>
+                        </div>
+                        <div
+                          class="py-4 w-[100%] max-lg:p-1 max-lg:mb-1 px-6 flex-col leading-[2] rounded-xl mb-5 hover:bg-[#a5a5a5]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-sm:text-[15px] max-lg:text-[17px]"
+                          >
+                            How to find work
+                          </h3>
+                          <p
+                            class="max-lg:hidden text-black font-light text-[14px] max-md:text-[12px]"
+                          >
+                            Learn about how to grow your independent career.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="m-20 mt-10 max-lg:w-[100%] max-lg:m-0 max-lg:mt-8 flex-col w-[25%]"
+                      >
+                        <p
+                          class="text-black font-light text-[14px] max-md:text-[12px] mb-5"
+                        >
+                          Featured resources
+                        </p>
+                        <div
+                          class="leading-[2] border-gray-500 rounded-xl px-5 border py-1 hover:bg-[#a5a5a5] mb-5"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-md:text-[13px]"
+                          >
+                            How to Hire Freelancers on Upwork
+                          </h3>
+                        </div>
+                        <div
+                          class="leading-[2] border-gray-500 rounded-xl px-5 border py-1 hover:bg-[#a5a5a5] mb-5"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-md:text-[13px]"
+                          >
+                            How to Use Upwork as a Freelancer
+                          </h3>
+                        </div>
+                        <div
+                          class="leading-[2] border-gray-500 rounded-xl px-5 border py-1 hover:bg-[#a5a5a5] mb-10"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-md:text-[13px]"
+                          >
+                            Grow Your Freelance Business
+                          </h3>
+                        </div>
+                        <div class="flex gap-3">
+                          <a
+                            href="#"
+                            class="underline hover:no-underline text-hover text-[14px]"
+                            >More resources
+                          </a>
+                          <div class="h-6 w-5 mb-0.5">
+                            <img
+                              class="h-full w-full"
+                              src="./multimedia/icons8-arrow-right-50.png"
+                              alt="arrow"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="py-1">
+                          <a
+                            href="#"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 "
+                            >Sign out</a
+                          >
+                        </div> -->
+                  </div>
+                </li>
+                <!-- fourth -->
+                <li class="hidden">
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar4"
+                    class="flex text-[16px] lg:text-[14px] items-center justify-between w-full py-3 px-3 text-blackhead rounded-sm focus:text-green-800 hover:text-hover lg:hover:bg-transparent lg:border-0 lg:hover:text-hover lg:p-0 lg:w-auto"
+                  >
+                    What's new
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar4"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-full"
+                  >
+                    <div
+                      class="w-[80%] flex max-lg:flex-col mb-10 m-auto mt-10"
+                    >
+                      <div
+                        class="p-5 w-[23%] max-lg:p-2 max-lg:m-0 max-lg:w-[100%] mr-5 rounded-xl hover:bg-[#a5a5a5]"
+                      >
+                        <div
+                          class="py-4 w-[85%] max-lg:p-2 max-sm:w-[95%] px-4 flex-col leading-[2]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-sm:text-[15px] max-lg:[17px]"
+                          >
+                            Upwork Updates
+                          </h3>
+                          <p
+                            class="text-black font-light text-[14px] max-sm:text-[14px] max-lg:[16px]"
+                          >
+                            Check out our latest products, partners, and
+                            enhancements.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="p-5 w-[23%] max-lg:w-[100%] max-lg:p-2 mr-5 rounded-xl hover:bg-[#a5a5a5]"
+                      >
+                        <div
+                          class="py-4 w-[85%] max-lg:p-2 max-sm:w-[95%] px-4 flex-col leading-[2]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-sm:text-[15px] max-lg:[17px]"
+                          >
+                            Blog
+                          </h3>
+                          <p
+                            class="text-black font-light text-[14px] max-sm:text-[14px] max-lg:[16px]"
+                          >
+                            News and stories from the world’s work marketplace.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="p-3 w-[23%] max-lg:w-[100%] max-lg:p-2 mr-5 max-lg:m-0 rounded-xl hover:bg-[#a5a5a5]"
+                      >
+                        <div
+                          class="w-[95%] max-lg:p-2 p-4 flex-col leading-[2]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-sm:text-[15px] max-lg:[17px]"
+                          >
+                            Research Institute
+                          </h3>
+                          <p
+                            class="text-black font-light text-[14px] max-sm:text-[14px] max-lg:[16px]"
+                          >
+                            Insights and tools for business leaders navigating a
+                            new world of work.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="p-5 w-[25%] max-lg:w-[100%] max-lg:p-2 rounded-xl hover:bg-[#a5a5a5]"
+                      >
+                        <div
+                          class="py-4 w-[95%] max-sm:w-[95%] max-lg:p-2 px-4 flex-col leading-[2]"
+                        >
+                          <h3
+                            class="font-medium text-[15px] max-sm:text-[15px] max-lg:[17px]"
+                          >
+                            Release notes
+                          </h3>
+                          <p
+                            class="text-black font-light text-[14px] max-sm:text-[14px] max-lg:[16px]"
+                          >
+                            Our latest product news, additions, and
+                            improvements.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- <div class="py-1">
+                            <a
+                              href="#"
+                              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 "
+                              >Sign out</a
+                            >
+                          </div> -->
+                    </div>
+                    <!-- <div class="py-1">
+                          <a
+                            href="#"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 "
+                            >Sign out</a
+                          >
+                        </div> -->
+                  </div>
+                </li>
+                <!-- sixth -->
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[16px] lg:text-[14px] py-3 px-3 text-blackhead rounded-sm focus:text-green-800 hover:text-hover lg:hover:bg-transparent lg:border-0 lg:hover:text-hover lg:p-0"
+                    >Enterprise</a
+                  >
+                </li>
+                <!-- done -->
+                <li class="hidden">
+                  <a
+                    href="#"
+                    class="block text-[16px] lg:text-[14px] py-3 px-3 text-gray-900 rounded-sm focus:text-green-800 hover:text-hover lg:hover:bg-transparent lg:border-0 lg:hover:text-hover lg:p-0"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hidden max-lg:block text-[16px] lg:text-[14px] py-3 px-3 text-gray-900 rounded-sm focus:text-green-800 hover:text-hover lg:hover:bg-transparent lg:border-0 lg:hover:text-hover lg:p-0"
+                    >Log in
+                  </a>
+                </li>
+              </ul>
+              <ul class="hidden max-lg:block">
+                <li class="py-4 mt-20 border-t-gray-400 border-t">
+                  <a
+                    href="#"
+                    class="bg-[#108a00] max-lg:block text-[14px] rounded-xl py-2 px-3 text-white"
+                    >Sign up</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- button -->
+          <div class="max-lg:hidden flex items-center w-[50%] justify-end">
+            <div class="w-[55%]">
+              <form
+                class="border-black border-1 bg-white rounded-xl h-10 flex justify-between"
+                action="/search"
+                method="get"
+              >
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="text-black hover:border-2 hover:border text-lg px-3 font-medium rounded-xl w-[70%]"
+                />
+                <button
+                  class="px-5 py-2 font-medium flex items-center text-lg hover:border-2 hover:border rounded-xl cursor-pointer"
+                  type="submit"
+                >
+                  Talent
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="flex">
+              <button class="py-2 px-6 text-[14px] rounded-2xl cursor-pointer">
+                Log in
+              </button>
+              <button
+                class="py-2 px-4 text-[14px] text-white rounded-2xl bg-hover cursor-pointer"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- second nav -->
+      <nav
+        class="bg-white fixed top-15 w-[100%] z-10 pt-3 py-2 border-t border-gray-200 max-lg:hidden"
+      >
+        <div
+          class="flex m-auto justify-between w-[80%] max-2xl:w-[90%] max-xl:w-[97%] px-3"
+        >
+          <ul class="flex space-x-6">
+            <li>
+              <a class="hover:underline text-[14px] hover:text-hover" href="#">
+                Development & IT
+              </a>
+            </li>
+            <li>
+              <a class="hover:underline text-[14px] hover:text-hover" href="#">
+                AI Services
+              </a>
+            </li>
+            <li>
+              <a class="hover:underline text-[14px] hover:text-hover" href="#">
+                Design & Creative
+              </a>
+            </li>
+            <li>
+              <a class="hover:underline text-[14px] hover:text-hover" href="#">
+                Sales & Marketing
+              </a>
+            </li>
+            <li>
+              <a class="hover:underline text-[14px] hover:text-hover" href="#">
+                Admin & Customer Support
+              </a>
+            </li>
+            <li class="flex items-center hover:text-hover">
+              <a class="hover:underline text-[14px] hover:text-hover" href="#">
+                More
+              </a>
+              <svg
+                class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- first section -->
+    <section>
+      <!-- class="flex max-xl:flex-col mt-10 mb-10 gap-12 m-auto max-sm:mt-0 w-[75%] max-2xl:w-[85%] max-xl:w-[90%] max-sm:w-[100%]" -->
+
+      <div
+        class="mt-30 max-lg:mt-10 m-auto w-[70%] max-2xl:w-[80%] max-xl:w-[90%] max-sm:w-[95%]"
+      >
+        <div class="pt-20 pb-15 max-lg:pb-8">
+          <h1 class="text-4xl font-bold">Client pricing plans</h1>
+          <p class="text-xl">Choose the plan that's right for your needs.</p>
+        </div>
+        <div>
+          <div class="mb-5">
+            <span class="text-[#676767]">Job seeker?</span
+            ><span class="text-green-600 hover:text-green-700 cursor-pointer">
+              Join as a freelancer
+            </span>
+          </div>
+          <div
+            class="flex justify-between max-xl:gap-5 max-lg:flex-col max-lg:space-y-6"
+          >
+            <!-- first cont -->
+            <div
+              class="w-[30%] max-xl:w-[35%] border border-[#676767] p-8 max-xl:p-3 rounded-2xl h-auto max-lg:w-[100%]"
+            >
+              <div>
+                <h1 class="text-2xl font-bold">Marketplace</h1>
+                <p class="text-[14px] text-[#676767]">For starting out</p>
+                <p class="py-6 max-lg:py-4 max-md:py-3 text-[16px] font-medium">
+                  5% Service fee
+                </p>
+              </div>
+              <div>
+                <button
+                  class="py-3 px-5 text-white bg-green-600 hover:bg-green-700 rounded-xl cursor-pointer"
+                >
+                  Sign up for free
+                </button>
+              </div>
+              <div class="border my-7 border-gray-300 flex-col"></div>
+              <h1 class="pb-3 text-[16px]">Marketplace plan includes:</h1>
+              <ul class="flex-col list-disc space-y-2 pl-5">
+                <li class="text-[14px]">
+                  Upwork’s global freelance marketplace
+                </li>
+                <li class="text-[14px]">Access to AI-powered features</li>
+                <li class="text-[14px]">
+                  Collaboration and project tracking tools
+                </li>
+                <li class="text-[14px]">Standard reporting</li>
+                <li class="text-[14px]">Flexible payment options</li>
+              </ul>
+            </div>
+            <!-- second container -->
+            <div
+              class="w-[30%] max-xl:w-[35%] border border-[#676767] p-8 max-xl:p-3 rounded-2xl max-lg:w-[100%]"
+            >
+              <div>
+                <h1 class="text-2xl font-bold">Business Plus</h1>
+                <p class="text-[14px] text-[#676767]">For growing</p>
+                <p class="py-6 max-lg:py-4 max-md:py-3 text-[16px] font-medium">
+                  10% Service fee
+                </p>
+              </div>
+              <div>
+                <button
+                  class="py-3 px-5 text-white bg-green-600 hover:bg-green-700 rounded-xl cursor-pointer"
+                >
+                  Sign up for free
+                </button>
+              </div>
+              <div class="border my-7 border-gray-300 flex-col"></div>
+              <h1 class="pb-3 text-[16px]">
+                Everything in Marketplace, and also:
+              </h1>
+              <ul class="flex-col list-disc space-y-2 pl-5">
+                <li class="text-[14px]">
+                  Access to pre-screened top 1% of talent
+                </li>
+                <li class="text-[14px]">
+                  Expertly matched talent shortlisted within 2 business days
+                </li>
+                <li class="text-[14px]">
+                  On-demand coaching for hiring and managing contracts
+                </li>
+                <li class="text-[14px]">Premium customer support 24/7</li>
+                <li class="text-[14px] relative">
+                  Monthly invoicing with Net 30 terms
+                  <span class="absolute text-[10px]">1</span>
+                </li>
+              </ul>
+            </div>
+            <!-- third container -->
+            <div
+              class="w-[30%] max-xl:w-[35%] border border-[#676767] p-8 max-xl:p-3 rounded-2xl max-lg:w-[100%]"
+            >
+              <div>
+                <h1 class="text-2xl font-bold">Enterprise</h1>
+                <p class="text-[14px] text-[#676767]">For scaling</p>
+                <p class="py-6 max-lg:py-4 max-md:py-3 text-[16px] font-medium">
+                  Contact Sales for pricing estimates
+                </p>
+              </div>
+              <div>
+                <button
+                  class="py-3 px-5 text-white bg-green-600 hover:bg-green-700 rounded-xl cursor-pointer"
+                >
+                  Contact Sales
+                </button>
+              </div>
+              <div class="border my-7 border-gray-300 flex-col"></div>
+              <h1 class="pb-3 text-[16px]">Marketplace plan includes:</h1>
+              <ul class="flex-col list-disc space-y-2 pl-5">
+                <li class="text-[14px]">
+                  Upwork’s global freelance marketplace
+                </li>
+                <li class="text-[14px]">Access to AI-powered features</li>
+                <li class="text-[14px]">
+                  Collaboration and project tracking tools
+                </li>
+                <li class="text-[14px]">Standard reporting</li>
+                <li class="text-[14px]">Flexible payment options</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- break -->
+    <div class="flex max-lg:hidden items-center justify-center">
+      <p class="text-xl my-10 text-center text-green-600 hover:text-green-700">
+        Compare plans
+      </p>
+      <div class="h-6 w-6">
+        <img src="./multimedia/icons8-arrow-down-new.png" alt="arrow_down" />
+      </div>
+    </div>
+    <!-- second section -->
+    <section>
+      <div
+        class="mt-15 max-lg:mt-10 max-lg:hidden m-auto w-[70%] max-2xl:w-[80%] max-xl:w-[90%] max-sm:w-[95%]"
+      >
+        <div id="prices">
+          <div class="flex justify-between bg-white">
+            <h1 class="text-4xl font-bold max-xl:text-3xl">
+              Compare features across plans
+            </h1>
+            <div
+              class="grid grid-cols-3 gap-7 max-xl:w-[52%] w-[45%] border-gray-300"
+            >
+              <div
+                class="space-y-2 p-4 max-xl:p-2 border border-gray-300 grid text-center rounded-xl bg-white"
+              >
+                <h1 class="font-bold text-xl">Marketplace</h1>
+                <p class="relative text-[14px] font-medium">
+                  5% Service fee <span class="absolute text-[10px]">2</span>
+                </p>
+                <div>
+                  <button
+                    class="py-2 px-6 text-white bg-green-700 hover:bg-green-600 rounded-xl"
+                  >
+                    Sign up
+                  </button>
+                </div>
+              </div>
+              <div
+                class="space-y-2 grid text-center p-4 max-xl:p-2 border border-gray-300 rounded-xl bg-[#F9F9F9]"
+              >
+                <h1 class="font-bold text-xl">Marketplace</h1>
+                <p class="relative text-[14px] font-medium">
+                  19% Service fee <span class="absolute text-[10px]">3</span>
+                </p>
+                <div>
+                  <button
+                    class="py-2 px-6 text-white bg-green-700 hover:bg-green-600 rounded-xl"
+                  >
+                    Sign up
+                  </button>
+                </div>
+              </div>
+              <div
+                class="space-y-2 grid p-4 border max-xl:p-2 text-center border-gray-300 rounded-xl bg-white"
+              >
+                <h1 class="font-bold text-xl">Marketplace</h1>
+                <p class="relative text-[14px]font-medium text-white">
+                  5% Service fee <span class="absolute text-[10px]">2</span>
+                </p>
+                <div>
+                  <button
+                    class="py-2 px-6 text-white bg-green-700 hover:bg-green-600 rounded-xl"
+                  >
+                    Sign up
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <!-- prices -->
+        <div class="relative mt-5 flex w-[100%]">
+          <div class="w-[100%] top-30">
+            <ul class="border-b border-gray-300">
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-xl font-bold text-[#181818]"
+              >
+                Talent
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Access to Upwork's global work marketplace
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Talent ID verified
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Verified freelancer work history and reviews on Upwork
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Top Rated and Rising Talent search filter
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Expert-Vetted talent
+              </li>
+
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Diversity-certified talent
+              </li>
+            </ul>
+            <ul class="border-b border-gray-300">
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-xl font-bold text-[#181818]"
+              >
+                Support and on-demand services
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Customer support
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Talent shortlisting services
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                On-demand coaching for hiring and managing contracts
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Program management
+              </li>
+
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Dedicated account manager
+              </li>
+            </ul>
+            <ul class="border-b border-gray-300 pb-1">
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-xl font-bold text-[#181818]"
+              >
+                Collaboration and project tracking
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Chat, share files, and make voice and video calls
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Teams and member permissions settings
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Timesheets, time tracker, work diary
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Standard reporting
+              </li>
+
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Activity codes
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Advanced reporting
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Custom reporting
+              </li>
+            </ul>
+            <ul class="border-b border-gray-300">
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-xl font-bold text-[#181818]"
+              >
+                Support and on-demand services
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Customer support
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Talent shortlisting services
+              </li>
+            </ul>
+            <ul class="border-b border-gray-300">
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-xl font-bold text-[#181818]"
+              >
+                APIs and integrations
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                API access
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Single sign on (SAML SSO)
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Vendor Management Systems
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Applicant Tracking Systems
+              </li>
+
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Spend Management Systems
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Human Resources Information Systems
+              </li>
+            </ul>
+            <ul class="border-b border-gray-300">
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-xl font-bold text-[#181818]"
+              >
+                Governance
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Payment protection and disputes
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Purchase orders
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Net 30 payment terms
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Custom talent onboarding plans
+              </li>
+
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Hiring pre-approvals workflow
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Compliance Worker Protection Program (WPP)
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Automated payroll services
+              </li>
+            </ul>
+            <ul class="border-gray-300">
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-xl font-bold text-[#181818]"
+              >
+                Support and on-demand services
+              </li>
+              <li
+                class="space-y-1 p-3 hover:bg-[#F9F9F9] text-[16px] text-[#181818]"
+              >
+                Customer support
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div
+            class="grid grid-cols-3 absolute right-0 top-0 gap-x-7 w-[45%] border-gray-300"
+          >
+            <div class="space-y-1 p-2 border-x grid text-center border-t"></div>
+            <div class="space-y-2 grid text-center p-2 border-x bg-[#f9f9f9]">
+              yes
+            </div>
+            <div class="space-y-2 grid p-2 border text-center rounded-xl">
+              yes
+            </div>
+          
+            <div class="space-y-1 p-2 grid text-center border-x"></div>
+            <div
+              class="space-y-2 grid text-center p-2 border bg-[#f9f9f9] rounded-xl"
+            >
+              yes
+            </div>
+            <div class="space-y-2 grid p-2 border text-center rounded-xl">
+              yes
+            </div>
+          </div> -->
+          <!-- <div class="grid grid-cols-7   w-[100%] gap-7 border">
+
+            <div class="grid col-span-3">Talent</div>
+            <div></div>
+            <div></div>
+            <div></div>
+          
+            <div class="grid col-span-4 border">
+              Access to Upwork's global work marketplace
+            </div>
+            <div>yes</div>
+            <div>yes</div>
+            <div>yes</div>
+          </div> -->
+
+          <div
+            class="flex justify-between max-xl:w-[52%] w-[45%] absolute top-0 right-0"
+          >
+            <!-- first -->
+            <div class="border border-gray-300 w-[30%] rounded-xl">
+              <ul class="text-center">
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <!-- second -->
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <!-- third -->
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <!-- 4 -->
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <!-- 5 -->
+                <li class="space-y-1 p-3 invisible pt-4">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <!-- 6 -->
+                <li class="space-y-1 p-3 invisible pt-6">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3">1 per team</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <!-- 7 -->
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+              </ul>
+            </div>
+            <!-- second -->
+            <div class="border border-gray-300 w-[30%] rounded-xl bg-[#F9F9F9]">
+              <ul class="text-center">
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9]">
+                  Premium 24/7
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9]">Limited</li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <!-- 3 -->
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <!-- 4 -->
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <!-- 5 -->
+                <li
+                  class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible pt-4"
+                >
+                  yes
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <!-- 6 -->
+                <li
+                  class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible pt-6"
+                >
+                  yes
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9]">
+                  1 per team
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <!-- 7 -->
+                <li class="space-y-1 p-3 rounded-t-xl bg-[#F9F9F9] invisible">
+                  yes
+                </li>
+                <li
+                  class="space-y-1 p-3 bg-[#F9F9F9] flex justify-center items-center"
+                >
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+              </ul>
+            </div>
+            <!-- third -->
+            <div class="border border-gray-300 w-[30%] rounded-xl">
+              <ul class="text-center">
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 invisible">yes</li>
+
+                <li class="space-y-1 p-3">Premium 24/7</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <!-- 3 -->
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <!-- 4 -->
+                <li class="space-y-1 p-3 invisible">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <!-- 5 -->
+                <li class="space-y-1 p-3 invisible pt-4">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <!-- 6 -->
+                <li class="space-y-1 p-3 invisible pt-4">yes</li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check"> check </span>
+                </li>
+                <li class="space-y-1 p-3 pt-4 invisible">
+                  Subcription required
+                </li>
+                <li class="space-y-1 p-3 flex justify-center items-center">
+                  <span class="material-symbols-outlined check invisible">
+                    check
+                  </span>
+                </li>
+                <!-- 7 -->
+                <li class="space-y-1 p-3 invisible pt-6">yes</li>
+                <li class="space-y-1 p-3 invisible pt-6">yes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- excess -->
+      </div>
+    </section>
+    <div
+      class="mt-10 px-8 mt-15 max-lg:mt-10 m-auto w-[70%] max-2xl:w-[80%] max-xl:w-[90%] max-sm:w-[95%]"
+    >
+      <ol class="list-decimal">
+        <li class="text-[12px] text-[#676767]">
+          Monthly invoicing with 30-day payment terms for U.S. based companies
+          only, will require an application and approval.
+        </li>
+        <li class="text-[12px] text-[#676767]">
+          2. 5% Marketplace fee. Eligible ACH payments discounted to 3%. A
+          <span class="text-green-600 hover:text-green-700 cursor-pointer"
+            >contract initiation fee</span
+          >
+          is charged per contract.
+        </li>
+        <li class="text-[12px] text-[#676767]">
+          3. 10% Business Plus fee. Eligible ACH payments discounted to 8%. No
+          contract initiation fee, with the exception of fixed-price contracts
+          of $100 USD or less.
+        </li>
+        <li class="text-[12px] text-[#676767]">4. 1 shortlist per job post.</li>
+      </ol>
+    </div>
+    <!-- last section -->
+    <section>
+      <div
+        class="mt-15 mb-10 max-lg:mt-10 m-auto w-[70%] max-2xl:w-[80%] max-xl:w-[90%] max-sm:w-[95%]"
+      >
+        <h1
+          class="text-[32px] max-lg:pb-7 max-md:pb-5 max-sm:text-[28px] max-sm:pb-3 font-bold pb-10"
+        >
+          Frequently asked questions
+        </h1>
+        <div class="bg-[#F9F9F9] rounded-xl w-full flex justify-end p-8">
+          <div
+            class="w-[55%] max-xl:w-[60%] max-lg:w-[100%] flex-col space-y-4"
+          >
+            <div class="flex-col space-y-2">
+              <h1 class="text-xl max-sm:text-[18px] font-medium text-[#181818]">
+                What is Upwork’s client service fee and how is it calculated?
+              </h1>
+              <p class="text-[16px] max-sm:text-[15px] text-[#676767]">
+                For the
+                <span
+                  class="text-green-600 underline hover:text-green-700 cursor-pointer"
+                  >Marketplace</span
+                >
+                plan, when you hire on Upwork, you pay a 3 or 5% Marketplace fee
+                on all payments that you make to freelancers for fixed-price and
+                hourly projects, Project Catalog projects, bonuses, and BYO
+                contracts.
+              </p>
+              <div class="flex items-center gap-2 cursor-pointer pb-2">
+                <a class="text-green-600 text-[16px]" href="#">Read more</a
+                ><span class="material-symbols-outlined text-hover">
+                  keyboard_arrow_down
+                </span>
+              </div>
+              <div class="border border-gray-300"></div>
+            </div>
+            <!-- second row -->
+            <div class="flex-col space-y-2">
+              <h1 class="text-xl font-medium max-sm:text-[18px] text-[#181818]">
+                When do I pay a client service fee?
+              </h1>
+              <p class="text-[16px] max-sm:text-[15px] text-[#676767]">
+                For the Marketplace plan and Business Plus plan, you only pay a
+                client service fee when you make a payment and your default
+                <span
+                  class="text-green-600 underline hover:text-green-700 cursor-pointer"
+                  >billing method
+                </span>
+                will be charged automatically for the balance due. For the
+              </p>
+              <div class="flex items-center gap-2 cursor-pointer pb-2">
+                <a class="text-green-600 text-[16px]" href="#">Read more</a
+                ><span class="material-symbols-outlined text-hover">
+                  keyboard_arrow_down
+                </span>
+              </div>
+              <div class="border border-gray-300"></div>
+            </div>
+            <!-- 3 -->
+            <div class="flex-col space-y-2">
+              <h1 class="text-xl font-medium max-sm:text-[18px] text-[#181818]">
+                Can I change my plan later on?
+              </h1>
+              <p class="text-[16px] max-sm:text-[15px] text-[#676767]">
+                Any client with Admin Full access can upgrade or downgrade their
+                account at any time. You can manage your membership plan for
+                your Upwork account under
+                <span
+                  class="text-green-600 underline hover:text-green-700 cursor-pointer"
+                  >Settings/membership/change_ plan.</span
+                >
+                There are no penalties or restrictions for
+              </p>
+              <div class="flex items-center gap-2 cursor-pointer pb-2">
+                <a class="text-green-600 text-[16px]" href="#">Read more</a
+                ><span class="material-symbols-outlined text-hover">
+                  keyboard_arrow_down
+                </span>
+              </div>
+              <div class="border border-gray-300"></div>
+            </div>
+            <!-- 4 -->
+            <div class="flex-col space-y-2">
+              <h1 class="text-xl font-medium max-sm:text-[18px] text-[#181818]">
+                What payment methods do you accept?
+              </h1>
+              <p class="text-[16px] max-sm:text-[15px] text-[#676767]">
+                To see which billing method options are available to you, visit
+                your
+                <span
+                  class="text-green-600 underline hover:text-green-700 cursor-pointer"
+                  >profile setting</span
+                >
+                . Note: Based on your location, your options may vary. Learn
+                more about
+                <span
+                  class="text-green-600 underline hover:text-green-700 cursor-pointer"
+                  >billing methods</span
+                >
+              </p>
+              <div class="flex items-center gap-2 cursor-pointer pb-2">
+                <a class="text-green-600 text-[16px]" href="#">Read more</a>
+                <span class="material-symbols-outlined text-hover">
+                  keyboard_arrow_down
+                </span>
+              </div>
+              <div class="border border-gray-300"></div>
+            </div>
+            <!-- 5 -->
+            <div class="flex-col space-y-2">
+              <h1 class="text-xl font-medium max-sm:text-[18px] text-[#181818]">
+                Are there any other fees?
+              </h1>
+              <p class="text-[16px] max-sm:text-[15px] text-[#676767]">
+                Both the Marketplace and Business Plus plans do not include
+                upfront costs to join.
+              </p>
+              <div class="flex items-center gap-2 cursor-pointer pb-2">
+                <a class="text-green-600 text-[16px]" href="#">Read more</a
+                ><span class="material-symbols-outlined text-hover">
+                  keyboard_arrow_down
+                </span>
+              </div>
+              <div class="border border-gray-300"></div>
+            </div>
+            <!-- 6 -->
+            <div class="flex-col space-y-2">
+              <h1 class="text-xl font-medium max-sm:text-[18px] text-[#181818]">
+                How do I get 30-day payment terms?
+              </h1>
+              <p class="text-[16px] max-sm:text-[15px] text-[#676767]">
+                Business Plus clients based in the U.S. may be eligible to apply
+                for monthly invoicing with 30-day payment terms. The application
+                process requires you to provide details and documentation about
+                business including banking and trade
+              </p>
+              <div class="flex items-center gap-2 cursor-pointer pb-2">
+                <a class="text-green-600 text-[16px]" href="#">Read more</a
+                ><span class="material-symbols-outlined text-hover">
+                  keyboard_arrow_down
+                </span>
+              </div>
+              <div class="border border-gray-300"></div>
+            </div>
+            <!-- bottom -->
+            <div class="flex gap-4 py-2 max-md:flex-col max-md:gap-2">
+              <h1 class="text-[16px] font-bold">Still have questions?</h1>
+
+              <span
+                class="text-green-600 underline text-[16px] hover:text-green-700 cursor-pointer"
+                >Visit our Help Center</span
+              >
+            </div>
+
+            <!-- test -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer  -->
+    <footer>
+      <div
+        class="flex-col m-auto rounded-xl mb-5 justify-between w-[80%] max-2xl:w-[90%] max-xl:w-[97%] bg-blackhead text-white"
+      >
+        <div
+          class="py-15 max-md:pb-5 px-20 max-md:px-5 max-md:flex-col max-lg:px-10 max-xl:px-15 gap-5 flex justify-between w-[90%] max-xl:w-[100%]"
+        >
+          <div
+            class="flex-col space-y-4 w-[25%] max-md:w-[100%] border-b-[#333] max-md:border-b"
+          >
+            <h1 class="text-[A5A5A5] text-lg">For Clients</h1>
+            <ul class="flex-col space-y-2 max-md:hidden">
+              <li>
+                <a class="text-[16px] hover:underline" href="#">How to hire</a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Talent Marketplace
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Project Catalog
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Hire an agency
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> Enterprise </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Business Plus
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> Any Hire </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Contract-to-hire
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Direct Contracts
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"
+                  >Hire worldwide</a
+                >
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Hire in the USA
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex-col space-y-4 w-[25%] max-md:w-[100%] border-b-[#333] max-md:border-b"
+          >
+            <h1 class="text-[A5A5A5] text-lg">For Talent</h1>
+            <ul class="flex-col space-y-2 max-md:hidden">
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  How to find work
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Direct Contracts
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Find freelance jobs worldwide
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Find freelance jobs in the USA
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Win work with ads
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Exclusive resources with Freelancer Plus
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex-col space-y-4 w-[25%] max-md:w-[100%] border-b-[#333] max-md:border-b"
+          >
+            <h1 class="text-[A5A5A5] text-lg">Resources</h1>
+            <ul class="flex-col space-y-2 max-md:hidden">
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Help & support
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Success stories
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Upwork reviews
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> Resources </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> Blog </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Affiliate programme
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Free Business Tools
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Release notes
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex-col space-y-4 w-[25%] max-md:w-[100%] border-b-[#333] max-md:border-b"
+          >
+            <h1 class="text-[A5A5A5] text-lg">Company</h1>
+            <ul class="flex-col space-y-2 max-md:hidden">
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> About us </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> Leadership </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Investor relations
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> Careers </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> Our impact </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> Press </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> Contact us </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#"> Partners </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Trust, safety & security
+                </a>
+              </li>
+              <li>
+                <a class="text-[16px] hover:underline" href="#">
+                  Modern slavery statement
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Socail div -->
+        <div
+          class="py-5 px-20 max-lg:px-10 max-xl:px-15 max-md:px-5 max-md:space-y-5 flex max-md:flex-col justify-between"
+        >
+          <div
+            class="flex max-md:flex-col max-md:gap-2 max-md:items-start w-[60%] gap-8 items-center"
+          >
+            <h1
+              class="text-[A5A5A5] text-lg max-xl:text-[16px] max-lg:text-[14px]"
+            >
+              Follow Us
+            </h1>
+            <img src="./multimedia/social.png" alt="social" />
+          </div>
+          <!-- Mobile app container -->
+          <div
+            class="flex max-md:flex-col max-md:gap-2 max-md:items-start w-[30%] gap-8 items-center"
+          >
+            <h1
+              class="text-[A5A5A5] text-lg max-xl:text-[16px] max-lg:text-[14px]"
+            >
+              Mobile app
+            </h1>
+            <img src="./multimedia/mobile.png" alt="mobile" />
+          </div>
+        </div>
+        <div
+          class="py-5 mx-20 max-lg:mx-10 max-md:mx-5 max-xl:mx-15 flex max-md:flex-col max-md:gap-5 gap-10 border-t-[#333] border-t"
+        >
+          <div>
+            <h1 class="text-[A5A5A5] text-[14px]">
+              © 2015 - 2025 Upwork ® Global Inc
+            </h1>
+          </div>
+          <div>
+            <ul class="flex gap-3 flex-wrap max-md:flex-col max-md:space-y-4">
+              <li>
+                <a class="text-[14px] hover:underline" href="#"
+                  >Terms of Service
+                </a>
+              </li>
+              <li>
+                <a class="text-[14px] hover:underline" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a class="text-[14px] hover:underline" href="#">
+                  CA Notice at Collection
+                </a>
+              </li>
+              <li>
+                <a class="text-[14px] hover:underline" href="#">
+                  Cookie Settings
+                </a>
+              </li>
+              <li>
+                <a class="text-[14px] hover:underline" href="#">
+                  Accessibility
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
+<!--  -->

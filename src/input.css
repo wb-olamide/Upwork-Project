@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-crisis: "Climate Crisis", sans-serif;
+  --font-helv: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-primary: #398e8c;
+  --color-blackhead: #181818;
+  --color-hover: #14a800;
+  --color-lightblack: #676767;
+  --color-bglightgray: #f9f9f9;
+}
