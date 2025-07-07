@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./upwork.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="w-[70%] max-xl:w-[96%] max-lg:flex max-lg:justify-center m-auto"
+      >
+        <a
+          href="#"
+          class="flex items-center space-x-3 py-4 rtl:space-x-reverse"
+        >
+          <img
+            src="./multimedia/Upwork-logo.svg"
+            class="h-6"
+            alt="Upwork Logo"
+          />
+        </a>
+      </nav>
+    </header>
+    <section>
+      <div
+        class="w-[28%] max-2xl:w-[35%] max-xl:w-[45%] max-lg:w-[55%] max-md:w-[100%] m-auto border border-gray-200 items-center flex justify-center mt-15 mb-20"
+      >
+        <div class="space-y-4 flex-col text-center p-8 max-md:p-3 w-[100%]">
+          <div>
+            <h1 class="text-2xl font-medium">Log in to Upwork</h1>
+          </div>
+          <div>
+            <form
+              class="border-black border w-[80%] max-md:w-[95%] m-auto bg-white hover:bg-[#e8f0fe] active:bg-[#e8f0fe] focus:bg-[#e8f0fe] rounded-xl py-1 flex justify-between px-2"
+              action="/search"
+              method="get"
+            >
+              <div class="flex items-center">
+                <img class="w-4" src="./multimedia/profile.svg" alt="" />
+              </div>
+              <input
+                type="text"
+                placeholder="bwaliu8@gmail.com"
+                class="text-black text-lg font-medium w-[90%]"
+              />
+            </form>
+          </div>
+          <div>
+            <button
+              class="py-2 px-4 bg-green-700 hover:bg-green-600 cursor-pointer w-[80%] max-md:w-[95%] rounded-xl text-white"
+            >
+              Continue
+            </button>
+          </div>
+          <div>
+            <div></div>
+            <span>or</span>
+            <div></div>
+          </div>
+          <div
+            class="px-1 bg-[#4285f4] w-[80%] max-md:w-[95%] m-auto text-white rounded-xl flex items-center"
+          >
+            <div class="bg-white p-2 rounded-xl">
+              <img class="w-6" src="./multimedia/icons8-google-48.png" alt="" />
+            </div>
+            <div class="text-center w-[85%]">
+              <p class="text-center font-bold text-white">
+                Continue with Google
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[80%] max-md:w-[95%] m-auto mt-4 mb-35 max-md:mb-16 flex items-center"
+          >
+            <button
+              class="py-2 px-4 cursor-pointer w-full rounded-xl text-black border flex items-center gap-2 justify-center"
+            >
+              <div><img class="w-3" src="./multimedia/apple.svg" alt="" /></div>
+              Continue with Apple
+            </button>
+          </div>
+          <p class="text-[#676767] text-lg max-md:mb-9">
+            Don't have an Upwork account?
+          </p>
+          <button
+            class="text-green-700 border-2 border-green-700 hover:bg-[#f3f3f3] cursor-pointer w-[45%] max-md:w-[28%] rounded-xl m-auto py-2"
+          >
+            Sign up
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="w-[70%] m-auto bg-black rounded-xl max-xl:w-[96%]">
+        <p class="py-15 px-2 text-center text-white">
+          © 2015 - 2025 Upwork® Global Inc. • Privacy Policy • Cookie Settings
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
