@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./upwork.css" />
+    <style>
+      .custom-label {
+        width: 25px;
+        height: 25px;
+        border: 2px solid rgb(21, 161, 21);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .custom-label input {
+        display: none;
+      }
+      .checkmark {
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        border-radius: 50%;
+        background-color: rgb(21, 161, 21);
+        display: inline-block;
+        display: none;
+      }
+      /* .click .custom-label input:checked + .checkmark {
+        display: block;
+      } */
+
+      /* .formi:checked + .custom-label input:checked .checkmark {
+        display: block;
+      } */
+      .formi input:checked + .checkmark {
+        background-color: green;
+        display: block;
+      }
+      .custom-label input:checked + .checkmark {
+        display: block;
+      }
+      /* .formi:hove {
+        background-color: blue;
+      }
+      .custom-label input .checkmark {
+        background-color: blue;
+        display: block;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="w-[70%] max-xl:w-[96%] max-2xl:w-[85%] m-auto">
+        <a
+          href="#"
+          class="flex items-center space-x-3 py-4 rtl:space-x-reverse"
+        >
+          <img
+            src="./multimedia/Upwork-logo.svg"
+            class="h-6"
+            alt="Upwork Logo"
+          />
+        </a>
+      </nav>
+    </header>
+
+    <section>
+      <div
+        class="w-[32%] max-2xl:w-[45%] max-xl:w-[50%] max-lg:w-[65%] max-md:w-[95%] mt-30 m-auto max-md:mt-10 space-y-10 max-md:space-y-6 max-sm:space-y-4 items-center flex-col"
+      >
+        <div class="">
+          <h1 class="text-4xl text-center font-medium max-md:text-2xl">
+            Join as a client or freelancer
+          </h1>
+        </div>
+        <div class="flex gap-10 max-md:flex-col max-sm:gap-5">
+          <!-- <ul
+            class="items-center w-[40%] text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex"
+          > -->
+          <div
+            class="w-full border border-gray-400 hover:border-black hover:border-2 rounded-xl hover:bg-[#f9f9f9] p-5 max-sm:p-3"
+          >
+            <div>
+              <div class="flex">
+                <label
+                  for="horizontal-list-radio-client"
+                  class="w-full text-sm font-medium text-gray-900"
+                  ><div class="pb-5 max-sm:pb-3">
+                    <img
+                      class="w-7"
+                      src="./multimedia/signup_case.svg"
+                      alt=""
+                    />
+                  </div>
+                </label>
+                <label class="custom-label">
+                  <input
+                    id="horizontal-list-radio-client"
+                    type="radio"
+                    value=""
+                    name="list-radio"
+                    class="text-blue-600 bg-gray-100 border-gray-300 focus:ring-green-900"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <label
+                for="horizontal-list-radio-client"
+                class="w-full text-sm font-medium text-gray-900"
+                ><div>
+                  <h1 class="text-[24px] max-sm:text-[22px] font-medium">
+                    I'm a client, hiring for a project
+                  </h1>
+                </div>
+              </label>
+            </div>
+            <!-- Second radio -->
+          </div>
+          <div
+            class="w-full border border-gray-400 hover:border-black hover:border-2 rounded-xl hover:bg-[#f9f9f9] p-5 max-sm:p-3"
+          >
+            <div>
+              <div class="flex">
+                <label
+                  for="horizontal-list-radio-freelancer"
+                  class="w-full text-sm font-medium text-gray-900"
+                  class="border border-amber-700"
+                  ><div class="pb-5 max-sm:pb-3">
+                    <img
+                      class="w-7"
+                      src="./multimedia/signup_lappy.svg"
+                      alt="icon"
+                    />
+                  </div>
+                </label>
+                <label class="custom-label">
+                  <input
+                    id="horizontal-list-radio-freelancer"
+                    type="radio"
+                    value=""
+                    name="list-radio"
+                    class="text-blue-600 bg-gray-100 border-gray-300 focus:ring-green-900"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <label
+                for="horizontal-list-radio-freelancer"
+                class="w-full text-sm font-medium text-gray-900"
+                ><div>
+                  <h1 class="text-[24px] max-sm:text-[22px] font-medium">
+                    I'm a freelancer, looking for work
+                  </h1>
+                </div>
+              </label>
+            </div>
+            <!-- Second radio -->
+          </div>
+          <!-- </ul> -->
+        </div>
+        <div class="flex-col items-center">
+          <button
+            class="px-8 flex mb-4 m-auto py-2 text-lg bg-green-700 hover:bg-green-600 rounded-xl text-white"
+          >
+            Join as a Client
+          </button>
+          <p class="text-[18px] max-sm:text-[16px] text-center">
+            Already have an account?
+            <a class="text-green-700 underline" href="#">Log In</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
