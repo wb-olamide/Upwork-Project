@@ -19,12 +19,13 @@
         display: none;
       }
       .checkmark {
-        width: calc(100% - 6px);
-        height: calc(100% - 6px);
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
         border-radius: 50%;
         background-color: rgb(21, 161, 21);
         display: inline-block;
-        display: none;
+        opacity: 0;
+        transition: all ease-in-out 300ms;
       }
       /* .click .custom-label input:checked + .checkmark {
         display: block;
@@ -33,12 +34,9 @@
       /* .formi:checked + .custom-label input:checked .checkmark {
         display: block;
       } */
-      .formi input:checked + .checkmark {
-        background-color: green;
-        display: block;
-      }
+
       .custom-label input:checked + .checkmark {
-        display: block;
+        opacity: 1;
       }
       /* .formi:hove {
         background-color: blue;
@@ -162,7 +160,7 @@
         </div>
         <div class="flex-col items-center">
           <button
-            class="px-8 flex mb-4 m-auto py-2 text-lg bg-green-700 hover:bg-green-600 rounded-xl text-white"
+            class="px-8 flex mb-4 m-auto py-2 text-lg bg-green-700 hover:bg-green-600 rounded-xl cursor-pointer text-white"
           >
             Join as a Client
           </button>

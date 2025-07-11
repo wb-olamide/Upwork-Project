@@ -15,6 +15,7 @@
       }
       #hero-container {
         background-image: linear-gradient(to right, #1c1c1f, #4d4240);
+        animation: flip 3s ease-in-out normal;
       }
       #enter {
         background-image: url(./multimedia/imgi_21_enterprise-2023.jpg);
@@ -51,6 +52,22 @@
         border-radius: 100px;
         padding: 0 20px;
       }
+      #topanim {
+        animation: flip 1.5s ease-in-out normal;
+      }
+      #bottomanim {
+        animation: flip 3s ease-in-out normal;
+      }
+      @keyframes flip {
+        0% {
+          transform: rotateY(-0.1turn);
+          opacity: 0;
+        }
+        100% {
+          transform: rotateY(0turn);
+          opacity: 1;
+        }
+      }
 
       /* #svg {
         background-image: url(./multimedia/second-section.svg);
@@ -64,7 +81,7 @@
     <header>
       <nav class="bg-white fixed top-0 w-[100%] z-10 border-gray-200">
         <div
-          class="flex m-auto justify-between w-[80%] max-2xl:w-[90%] max-xl:w-[97%]"
+          class="flex m-auto justify-between w-[80%] max-2xl:w-[90%] max-xl:w-[97%] py-2"
         >
           <div
             class="flex flex-wrap justify-between items-center lg:justify-start lg:gap-7 p-4 w-full lg:w-[80%]"
@@ -114,7 +131,7 @@
                   <button
                     id="dropdownNavbarLink"
                     data-dropdown-toggle="dropdownNavbar1"
-                    class="flex pointer relative text-[16px] cursor-pointer lg:text-[14px] items-center justify-between w-full py-3 px-3 text-blackhead rounded-sm focus:text-green-800 hover:text-hover lg:hover:bg-transparent lg:border-0 lg:hover:text-hover lg:p-0 lg:w-auto"
+                    class="flex pointer relative border top-0 text-[16px] cursor-pointer lg:text-[14px] items-center justify-between w-full py-3 px-3 text-blackhead rounded-sm focus:text-green-800 hover:text-hover lg:hover:bg-transparent lg:border-0 lg:hover:text-hover lg:p-0 lg:w-auto"
                   >
                     Find talent
                     <svg
@@ -136,7 +153,7 @@
                   <!-- Dropdown menu -->
                   <div
                     id="dropdownNavbar1"
-                    class="z-10 hidden font-normal flex absolute border border-gray-300 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-full"
+                    class="z-10 hidden font-normal absolute border border-gray-300 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-full"
                   >
                     <div class="w-[85%] m-auto flex">
                       <div
@@ -758,6 +775,7 @@
         <div class="w-[90%] max-sm:w-[100%] m-auto">
           <div class="flex-col space-y-4">
             <div
+              id="topanim"
               class="w-[50%] max-2xl:w-[55%] max-xl:w-[60%] max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%] max-sm:m-auto"
             >
               <h1 class="text-6xl max-2xl:text-5xl max-sm:text-3xl">
@@ -1959,7 +1977,9 @@
             <h1 class="text-[A5A5A5] text-lg">Company</h1>
             <ul class="flex-col space-y-2 max-md:hidden">
               <li>
-                <a class="text-[16px] hover:underline" href="./about.html"> About us </a>
+                <a class="text-[16px] hover:underline" href="./about.html">
+                  About us
+                </a>
               </li>
               <li>
                 <a class="text-[16px] hover:underline" href="#"> Leadership </a>
