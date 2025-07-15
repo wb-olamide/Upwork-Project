@@ -59,7 +59,6 @@
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
-    --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -261,6 +260,9 @@
   }
   .z-10 {
     z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
   }
   .col-span-3 {
     grid-column: span 3 / span 3;
@@ -522,6 +524,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[2000px\] {
+    max-width: 2000px;
   }
   .max-w-screen-xl {
     max-width: var(--breakpoint-xl);
